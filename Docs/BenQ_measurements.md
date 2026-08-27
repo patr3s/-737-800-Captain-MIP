@@ -4,19 +4,18 @@ Cradle sa nebude modelovať, kým nebudú vyplnené všetky kritické rozmery ko
 
 | Rozmer | Hodnota (mm) | Poznámka |
 |---|---:|---|
-| Celková šírka monitora |  | bez stojana |
-| Celková výška monitora |  | bez stojana |
-| Maximálna hrúbka |  | vrátane lokálnych výstupkov |
-| Šírka aktívnej LCD plochy |  | iba svietiaca plocha |
-| Výška aktívnej LCD plochy |  | iba svietiaca plocha |
-| Ľavý okraj → aktívna plocha |  |  |
-| Horný okraj → aktívna plocha |  |  |
-| VESA horizontálny raster |  | stred–stred |
-| VESA vertikálny raster |  | stred–stred |
-| VESA stred od ľavého okraja |  |  |
-| VESA stred od horného okraja |  |  |
+| Celková šírka monitora | 445 | bez stojana |
+| Celková výška monitora | 266 | bez stojana |
+| Maximálna hrúbka | 60 | bez stojana |
+| Šírka aktívnej LCD plochy | 410 | iba svietiaca plocha |
+| Výška aktívnej LCD plochy | 232 | iba svietiaca plocha |
+| Ľavý okraj → aktívna plocha | 18 |  |
+| Horný okraj → aktívna plocha | 18 |  |
+| VESA horizontálny raster | 100 | stred–stred |
+| VESA vertikálny raster | 100 | stred–stred |
+| VESA stred od ľavého okraja | približne 220 | odvodené z ľavej hornej diery 170 mm |
+| VESA stred od horného okraja | približne 130 | odvodené z ľavej hornej diery 80 mm |
 | Závit VESA |  | napr. M4 |
 | Maximálna bezpečná hĺbka skrutky |  | bez hrúbky držiaka |
 
 Odfoť aj zadnú stranu, konektory a smer, ktorým musia vystupovať káble. Monitor netreba rozoberať.
-

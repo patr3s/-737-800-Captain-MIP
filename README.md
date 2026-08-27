@@ -6,7 +6,7 @@ Modulárny 1:1 Captain-side Main Instrument Panel pre PMDG 737-800.
 
 - DU bezel v2: referenčný rozmer 203,2 × 203,2 mm; aktívny otvor 169,7 × 169,7 mm.
 - PFD+ND carrier v1: parametrický návrh, rozdelený na samostatný PFD a ND rám pre tlačovú plochu 260 × 260 mm.
-- BenQ 18,5\" cradle: čaká na fyzické rozmery konkrétneho monitora.
+- BenQ 18,5\" cradle v1: VESA 100 × 100 mm, delená zostava podľa fyzických rozmerov 445 × 266 × 60 mm; čaká na montážnu kontrolu závitu, káblov a heat-set vložiek.
 - Elektronika: Arduino Mega 2560 + MobiFlight; WINCTRL MCP/EFIS.
 
 ## Štruktúra

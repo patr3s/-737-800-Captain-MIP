@@ -4,6 +4,8 @@
 
 Carrier v1 je pevná, servisovateľná základňa pre dva samostatné DU bezely. Nie je to držiak monitora. BenQ bude mať vlastnú zadnú kolísku, doplnenú po fyzickom meraní.
 
+Fyzické rozmery BenQ sú už zapracované. Nominálna stredová medzera medzi carrier rámami je **7,0 mm**, takže zostava má šírku **445,4 mm** oproti 445 mm šírke monitora. Zadné VESA diely sú vedené v samostatnom modeli `CAD/BenQ_VESA_cradle_v1`.
+
 ## Konštrukcia
 
 - Dva samostatné rámy PFD a ND, každý 219,2 × 219,2 × 5 mm.
@@ -13,6 +15,7 @@ Carrier v1 je pevná, servisovateľná základňa pre dva samostatné DU bezely.
 - Dve samostatné spojovacie lišty so slotmi ponechávajú rozstup PFD/ND nastaviteľný.
 - Horné sloty tvoria rozhranie pre budúci nosník EFIS/MCP.
 - ND rám má na pravom okraji tri sloty pre napojenie center MIP.
+- Vonkajšie okraje majú dvojicu slotov pre bočné hĺbkové ramená BenQ cradle.
 
 ## Dôležitá otvorená položka
 
@@ -45,3 +48,4 @@ Raster 183,2 × 183,2 mm bol rekonštruovaný z deklarovaných servisných bodov
 - [ ] Overený raster otvorov proti bezel v2.
 - [ ] Skúšobne vytlačené.
 - [ ] Rozstup PFD/ND uzamknutý po fyzickej skúške.
+- [x] Nominálna medzera rámov nastavená na 7,0 mm podľa 445 mm obrysu monitora.

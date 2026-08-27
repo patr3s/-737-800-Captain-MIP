@@ -30,7 +30,9 @@ m3_heatset_pocket = 4.6;
 m3_heatset_depth = 4.2;
 
 // Assembly preview only. Printed parts do not encode this dimension.
-preview_du_gap = 12;
+// Final nominal gap derived from the measured 445 mm BenQ envelope.
+// 2 * 219.2 + 7.0 = 445.4 mm total carrier width.
+preview_du_gap = 7.0;
 
 joiner_length = 92;
 joiner_width = 18;
@@ -89,6 +91,13 @@ module center_mip_interface_holes() {
             rotate([0,0,90]) slot(10, m3_clearance, carrier_thickness+0.2);
 }
 
+module cradle_interface_holes(side="left") {
+    x = side == "left" ? 10 : carrier_size - 10;
+    for (y = [38, carrier_size - 38])
+        translate([x, y, -0.1])
+            rotate([0,0,90]) slot(8, m3_clearance, carrier_thickness+0.2);
+}
+
 module carrier_frame(side="left") {
     difference() {
         rounded_box([carrier_size, carrier_size, carrier_thickness], 4);
@@ -101,6 +110,7 @@ module carrier_frame(side="left") {
         rear_heatset_pockets();
         joining_holes(side);
         top_interface_holes();
+        cradle_interface_holes(side);
         if (side == "right") center_mip_interface_holes();
     }
 }
