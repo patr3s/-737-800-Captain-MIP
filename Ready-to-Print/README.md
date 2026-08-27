@@ -7,3 +7,4 @@ Carrier v1 sem bude presunutý po úspešnom STL exporte, kontrole geometrie a p
 ## Uvoľnené diely
 
 - `737-MIP-CAL-001_M3-calibration-coupon_v1.stl` – vytlačiť 1 ks ako prvý diel projektu.
+- `POKYNY_PRE_5s3a.md` – kompletné nastavenie tlače a postup vyhodnotenia testu.
