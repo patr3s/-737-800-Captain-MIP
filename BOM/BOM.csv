@@ -10,3 +10,4 @@ Printed,PFD carrier frame,v1 PETG,1,design,219.2 x 219.2 x 5 mm
 Printed,ND carrier frame,v1 PETG,1,design,219.2 x 219.2 x 5 mm
 Printed,Carrier joiner bar,v1 PETG,2,design,Slotted adjustment
 Printed,Upper EFIS/MCP interface,v1 PETG,2,design,One provisional bracket per DU
+Printed,M3 calibration coupon,v1 PETG,1,ready to print,Print before carrier frames
