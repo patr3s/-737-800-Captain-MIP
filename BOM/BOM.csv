@@ -1,0 +1,12 @@
+Category,Item,Specification,Quantity,Status,Notes
+Electronics,Arduino Mega 2560,Rev3,1,ordered,MobiFlight controller
+Controls,Rotary encoder,EC11 with D-shaft and push switch,5,ordered,Prototype stock
+Controls,Toggle switch,MTS-103 3-position 3-pin,5,ordered,Prototype stock
+Avionics,WINCTRL MCP/EFIS,737NG compatible,1,set,Upper interface reserved
+Display,BenQ monitor,18.5 inch,1,pending measurement,Cradle blocked until physical measurements
+Hardware,Heat-set insert,M3 for printed plastic,TBD,to purchase,Confirm outer diameter before pocket freeze
+Hardware,Screw,M3 assorted lengths,TBD,to purchase,Final lengths after stack-up test
+Printed,PFD carrier frame,v1 PETG,1,design,219.2 x 219.2 x 5 mm
+Printed,ND carrier frame,v1 PETG,1,design,219.2 x 219.2 x 5 mm
+Printed,Carrier joiner bar,v1 PETG,2,design,Slotted adjustment
+Printed,Upper EFIS/MCP interface,v1 PETG,2,design,One provisional bracket per DU
