@@ -15,3 +15,11 @@ Printed,BenQ VESA center plate,v1 PETG,1,design,170x170x7 mm; verify monitor scr
 Printed,BenQ rear wing,v1 PETG,4,design,M3 slotted joints
 Printed,BenQ side depth arm,v1 PETG,4,design,Monitor removable from rear
 Printed,BenQ bottom stabilizer,v1 PETG,2,design,Stabilization only; no primary load
+Printed,DU bezel light base,v3 light or white PETG,2,design,Backlit-ready; verify 183.2 mm service-hole pitch
+Printed,DU bezel dark face,v3 black PETG,2,design,Visible PFD and ND face layer
+Printed,DU bezel diffuser ring,v3 natural or white PETG,2,design,0.8 mm backlight diffuser
+Printed,Backlight test base,v1 white PETG,1,ready to print,Technology coupon only
+Printed,Backlight test dark face,v1 black PETG,1,ready to print,Technology coupon only
+Printed,Backlight test diffuser,v1 natural or white PETG,1,ready to print,Technology coupon only
+Printed,Dual concentric lower knob,v1 black PETG,TBD,provisional,Requires encoder shaft measurement
+Printed,Dual concentric upper knob,v1 black PETG,TBD,provisional,Requires encoder shaft measurement
