@@ -18,9 +18,16 @@ Printed,BenQ bottom stabilizer,v1 PETG,2,redesign pending,May return as non-load
 Hardware,Fixed steel VESA bracket,100x100 mm low-profile,1,to select,Primary monitor support attached to MIP structure
 Printed,DU bezel light base,v3 light or white PETG,2,design,Backlit-ready; verify 183.2 mm service-hole pitch
 Printed,DU bezel dark face,v3 black PETG,2,design,Visible PFD and ND face layer
-Printed,DU bezel diffuser ring,v3 natural or white PETG,2,design,0.8 mm backlight diffuser
+Printed,DU bezel diffuser ring,v3 natural or white PETG,2,design,0.4 mm backlight diffuser
 Printed,Backlight test base,v1 white PETG,1,ready to print,Technology coupon only
 Printed,Backlight test dark face,v1 black PETG,1,ready to print,Technology coupon only
 Printed,Backlight test diffuser,v1.1 natural or white PETG 0.4 mm,1,ready to print,Technology coupon only
 Printed,Dual concentric lower knob,v1 black PETG,TBD,provisional,Requires encoder shaft measurement
 Printed,Dual concentric upper knob,v1 black PETG,TBD,provisional,Requires encoder shaft measurement
+Printed,PFD/ND fascia light base segments,v1 white PETG,7,prototype,Release after CAL-003 fit-check
+Printed,PFD/ND fascia dark face segments,v1 black PETG,7,prototype,Release after CAL-003 fit-check
+Printed,PFD/ND fascia diffuser segments,v1 natural or white PETG 0.4 mm,4,prototype,Top/bottom rails only
+Printed,PFD/ND fascia center seam joiner,v1 PETG,2,prototype,M3 rear joiner for top and bottom seams
+Printed,PFD/ND alignment fit-check,CAL-003 PETG,1 set,ready to print,9 small parts; no heat-set inserts required
+Printed,Steel VESA XY alignment plate,v1 PETG,TBD,provisional,Non-load-bearing; exact steel bracket pending
+Printed,Steel VESA Z shim set,0.5/1.0/2.0 mm PETG,TBD,provisional,Non-load-bearing depth adjustment

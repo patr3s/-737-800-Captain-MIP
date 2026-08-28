@@ -31,8 +31,14 @@ m3_heatset_depth = 4.2;
 
 // Assembly preview only. Printed parts do not encode this dimension.
 // Final nominal gap derived from the measured 445 mm BenQ envelope.
-// 2 * 219.2 + 7.0 = 445.4 mm total carrier width.
-preview_du_gap = 7.0;
+// 2 * 219.2 + 6.6 = 445.0 mm total carrier width.
+preview_du_gap = 6.6;
+
+// The bezel is shifted toward the center on each asymmetric carrier.
+// A further +0.5 mm global optical shift compensates the measured BenQ
+// active-area borders: 18 mm left and 17 mm right.
+left_bezel_shift_x = 8.5;
+right_bezel_shift_x = -7.5;
 
 joiner_length = 92;
 joiner_width = 18;
@@ -58,18 +64,21 @@ module slot(length, diameter, height) {
     }
 }
 
-module bezel_mount_holes() {
+function bezel_shift_x(side) = side == "left" ? left_bezel_shift_x : right_bezel_shift_x;
+
+module bezel_mount_holes(side="left") {
     offset = carrier_border + bezel_hole_edge;
     for (x = [offset, offset + bezel_hole_pitch])
         for (y = [offset, offset + bezel_hole_pitch])
-            translate([x, y, -0.1]) cylinder(h=carrier_thickness+0.2, d=m3_clearance);
+            translate([x + bezel_shift_x(side), y, -0.1])
+                cylinder(h=carrier_thickness+0.2, d=m3_clearance);
 }
 
-module rear_heatset_pockets() {
+module rear_heatset_pockets(side="left") {
     offset = carrier_border + bezel_hole_edge;
     for (x = [offset, offset + bezel_hole_pitch])
         for (y = [offset, offset + bezel_hole_pitch])
-            translate([x, y, carrier_thickness-m3_heatset_depth])
+            translate([x + bezel_shift_x(side), y, carrier_thickness-m3_heatset_depth])
                 cylinder(h=m3_heatset_depth+0.1, d=m3_heatset_pocket);
 }
 
@@ -101,13 +110,13 @@ module cradle_interface_holes(side="left") {
 module carrier_frame(side="left") {
     difference() {
         rounded_box([carrier_size, carrier_size, carrier_thickness], 4);
-        translate([(carrier_size-screen_opening-opening_clearance)/2,
+        translate([(carrier_size-screen_opening-opening_clearance)/2 + bezel_shift_x(side),
                    (carrier_size-screen_opening-opening_clearance)/2, -0.1])
             cube([screen_opening+opening_clearance,
                   screen_opening+opening_clearance,
                   carrier_thickness+0.2]);
-        bezel_mount_holes();
-        rear_heatset_pockets();
+        bezel_mount_holes(side);
+        rear_heatset_pockets(side);
         joining_holes(side);
         top_interface_holes();
         cradle_interface_holes(side);

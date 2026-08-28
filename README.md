@@ -10,6 +10,8 @@ Modulárny 1:1 Captain-side Main Instrument Panel pre PMDG 737-800.
 - DU bezel v3: parametrická backlit-ready svetlá základňa, tmavá face vrstva a samostatný difúzor.
 - Backlight test panel v1: technologický kupón s LED kanálom a presvietiteľnými znakmi.
 - Dual-concentric knob v1: samostatné parametrické knoby; rozmery hriadeľov sú zatiaľ provisional.
+- PFD/ND fascia v1: kompletná 445 × 266 mm predná maska rozdelená na tlačiteľné segmenty; čaká na CAL-003 fit-check.
+- PFD/ND Pop Out alignment: fyzická 1:1 geometria prepočítaná na BenQ 1366 × 768.
 - Elektronika: Arduino Mega 2560 + MobiFlight; WINCTRL MCP/EFIS.
 
 ## Štruktúra

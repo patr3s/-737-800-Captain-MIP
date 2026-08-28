@@ -4,6 +4,7 @@
 
 - M3 kalibračný diel: 1 ks, už v `Ready-to-Print`.
 - Backlight test panel v1: základňa 1 ks, tmavá face vrstva 1 ks, difúzor 1 ks. Je to technologický test, nie finálny rozmerový panel.
+- PFD/ND CAL-003 alignment fit-check: 1 sada deviatich malých dielov, bez heat-set vložiek.
 
 ## STL sú pripravené, ale ešte sa nemajú tlačiť ako finálne
 
@@ -11,6 +12,7 @@
 - DU bezel v3: čaká na overenie rastra štyroch servisných otvorov proti carrieru.
 - BenQ PETG VESA cradle: `HOLD/DO NOT PRINT`; nahradí ho pevný oceľový VESA 100 nosník a nenosné tlačené dorazy.
 - Dual-concentric knob set: čaká na presné rozmery hriadeľov enkódera.
+- Kompletná fascia v1: CAD/STL hotové, čaká na výsledok CAL-003.
 
 ## Predbežný spojovací materiál pre celý PFD+ND modul
 

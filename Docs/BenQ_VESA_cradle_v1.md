@@ -16,7 +16,7 @@ Existujúce SCAD/STL zostávajú zachované ako vývojová referencia, ale majú
 | VESA | 100 × 100 mm |
 | Ľavá horná VESA diera odľava/zhora | približne 170 / 80 mm |
 
-Carrier má po nastavení stredovej medzery 7,0 mm celkovú šírku 445,4 mm. Monitor sa centruje vodorovne. Jeho horná hrana je voči carrieru posunutá o 6,25 mm, čím aktívna plocha začína na rovnakej výškovej referencii ako DU otvory.
+Aktuálny carrier používa medzeru 6,6 mm a celkovú šírku 445,0 mm. Bezely sú asymetricky posunuté tak, aby boli viditeľné otvory centrované na aktívnom LCD. Tento dokument ďalej opisuje pôvodný tlačený cradle iba ako archivovanú vývojovú koncepciu.
 
 ## Architektúra
 
@@ -44,7 +44,7 @@ Krídla sú umiestnené v zadnej stredovej rovine a bočné ramená mimo obrysu 
 
 ## Poradie montáže
 
-1. Zmontovať PFD a ND carrier so stredovou medzerou 7,0 mm, zatiaľ bez monitora.
+1. Zmontovať PFD a ND carrier so stredovou medzerou 6,6 mm, zatiaľ bez monitora.
 2. Osadiť bočné hĺbkové ramená, ale M3 skrutky nechať mierne povolené.
 3. Pripojiť štyri zadné krídla k VESA platni.
 4. Priložiť zostavu k monitoru a overiť závit aj bezpečnú dĺžku VESA skrutiek.
