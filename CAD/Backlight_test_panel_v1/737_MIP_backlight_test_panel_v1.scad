@@ -12,9 +12,10 @@ panel_h = 62;
 corner_r = 4;
 base_t = 3.2;
 face_t = 1.0;
-diffuser_t = 0.8;
+diffuser_t = 0.4; // empirically verified by 5s3a: 2 layers at 0.20 mm
 encoder_hole = 10.2; // provisional until the selected encoder is measured
-m3_clearance = 3.4;
+m3_clearance = 3.2; // calibrated on Anycubic Kobra X, Anycubic PETG, flow 0.96
+led_channel_depth = 2.0;
 
 module rounded_rect_2d(size,r) {
     hull()
@@ -28,14 +29,15 @@ module mounting_holes(h) {
 }
 
 module labels_2d() {
+    // Stencil font keeps counters in P/A/D attached to the face sheet.
     translate([30,42]) text("PANEL",size=8,halign="center",valign="center",
-                            font="Liberation Sans:style=Bold");
+                            font="Stencil:style=Regular");
     translate([30,24]) text("DIM",size=7,halign="center",valign="center",
-                            font="Liberation Sans:style=Bold");
+                            font="Stencil:style=Regular");
     translate([90,44]) text("DUAL",size=6,halign="center",valign="center",
-                            font="Liberation Sans:style=Bold");
+                            font="Stencil:style=Regular");
     translate([90,16]) text("TEST",size=6,halign="center",valign="center",
-                            font="Liberation Sans:style=Bold");
+                            font="Stencil:style=Regular");
     translate([58,31]) polygon(points=[[0,0],[6,4],[0,8]]);
 }
 
@@ -45,14 +47,16 @@ module light_base() {
         mounting_holes(base_t);
         translate([90,31,-0.1]) cylinder(h=base_t+0.2,d=encoder_hole);
 
-        // Rear LED channel, open through a service feed at the right edge.
-        translate([8,8,-0.1])
-            linear_extrude(1.4)
+        // Front-open LED channel. A 0.4 mm diffuser sits directly above it,
+        // between the LEDs and the dark face layer.
+        translate([8,8,base_t-led_channel_depth])
+            linear_extrude(led_channel_depth+0.1)
                 difference() {
                     rounded_rect_2d([104,46],4);
                     translate([6,6]) rounded_rect_2d([92,34],3);
                 }
-        translate([108,27,-0.1]) cube([12,8,1.6]);
+        translate([108,27,base_t-led_channel_depth])
+            cube([12,8,led_channel_depth+0.1]);
     }
 }
 
@@ -76,12 +80,11 @@ module diffuser() {
 
 module assembly_preview() {
     color("ivory") light_base();
-    color([0.12,0.12,0.12]) translate([0,0,base_t]) dark_face();
-    color([1,0.8,0.25,0.65]) translate([4,4,-diffuser_t]) diffuser();
+    color([1,0.8,0.25,0.65]) translate([4,4,base_t]) diffuser();
+    color([0.12,0.12,0.12]) translate([0,0,base_t+diffuser_t]) dark_face();
 }
 
 if(part=="base") light_base();
 else if(part=="face") dark_face();
 else if(part=="diffuser") diffuser();
 else assembly_preview();
-

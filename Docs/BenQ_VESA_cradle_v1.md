@@ -1,4 +1,10 @@
-# BenQ VESA cradle v1 – finálny rozmerový návrh
+# BenQ VESA cradle v1 – HOLD / DO NOT PRINT
+
+## Rozhodnutie po revízii 5s3a
+
+Tlačený PETG cradle sa nebude používať ako hlavný dlhodobý nosný prvok. PETG sa pri trvalom statickom zaťažení môže časom dotvarovať. Hlavné zaťaženie monitora preto prevezme pevný oceľový VESA 100 × 100 mm držiak upevnený do konštrukčného rámu MIP.
+
+Existujúce SCAD/STL zostávajú zachované ako vývojová referencia, ale majú stav `HOLD/DO NOT PRINT`. Nové tlačené diely budú iba nastaviteľné podložky, bočné dorazy a stabilizátory bez hlavnej nosnej funkcie. Tie sa navrhnú podľa geometrie vybraného oceľového držiaka a suchej montáže.
 
 ## Použité fyzické rozmery
 

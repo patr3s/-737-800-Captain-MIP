@@ -9,7 +9,7 @@
 
 - PFD carrier a ND carrier: čakajú na M3/heat-set kalibráciu a overenie rastra DU bezelu.
 - DU bezel v3: čaká na overenie rastra štyroch servisných otvorov proti carrieru.
-- BenQ VESA cradle: čaká na potvrdenie závitu a bezpečnej dĺžky VESA skrutiek a kontrolu káblov.
+- BenQ PETG VESA cradle: `HOLD/DO NOT PRINT`; nahradí ho pevný oceľový VESA 100 nosník a nenosné tlačené dorazy.
 - Dual-concentric knob set: čaká na presné rozmery hriadeľov enkódera.
 
 ## Predbežný spojovací materiál pre celý PFD+ND modul
@@ -42,4 +42,3 @@ Na monitore už netreba opakovať celkové rozmery ani aktívnu plochu. Zostáva
 5. overiť, či zadný kryt nemá výstupok hrubší než uvedených 60 mm.
 
 Pre dual-concentric panel treba neskôr zmerať priemer závitového puzdra enkódera, dĺžku a priemer oboch hriadeľov, tvar hriadeľov a vzdialenosť matice od prednej plochy panelu.
-

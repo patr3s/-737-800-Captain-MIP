@@ -14,16 +14,16 @@ du_size = 203.2;
 display_opening = 169.7;
 base_t = 3.2;
 face_t = 1.2;
-diffuser_t = 0.8;
+diffuser_t = 0.4; // empirically verified by 5s3a
 outer_radius = 5;
 inner_radius = 3;
 
-m3_clearance = 3.4;
+m3_clearance = 3.2; // calibrated by 5s3a for Anycubic PETG at flow 0.96
 mount_edge = 10;
 mount_pitch = du_size - 2*mount_edge; // 183.2, matches carrier v1
 
-led_channel_width = 5.0;
-led_channel_depth = 1.2;
+led_channel_width = 5.6; // 5 mm COB strip plus placement clearance
+led_channel_depth = 2.0;
 led_channel_offset = 3.0;
 diffuser_ring_width = 4.0;
 
@@ -50,7 +50,7 @@ module mount_holes(h) {
 module led_channel() {
     inner = display_opening + 2*led_channel_offset;
     outer = inner + 2*led_channel_width;
-    translate([(du_size-outer)/2,(du_size-outer)/2,-0.1])
+    translate([(du_size-outer)/2,(du_size-outer)/2,base_t-led_channel_depth])
         linear_extrude(led_channel_depth+0.1)
             difference() {
                 rounded_rect_2d([outer,outer],inner_radius+led_channel_width);
@@ -61,10 +61,10 @@ module led_channel() {
 
 module cable_exits() {
     // Four optional exits allow the LED feed to leave in the best direction.
-    translate([du_size/2-4,0,-0.1]) cube([8,12,led_channel_depth+0.2]);
-    translate([du_size/2-4,du_size-12,-0.1]) cube([8,12,led_channel_depth+0.2]);
-    translate([0,du_size/2-4,-0.1]) cube([12,8,led_channel_depth+0.2]);
-    translate([du_size-12,du_size/2-4,-0.1]) cube([12,8,led_channel_depth+0.2]);
+    translate([du_size/2-4,0,base_t-led_channel_depth]) cube([8,12,led_channel_depth+0.2]);
+    translate([du_size/2-4,du_size-12,base_t-led_channel_depth]) cube([8,12,led_channel_depth+0.2]);
+    translate([0,du_size/2-4,base_t-led_channel_depth]) cube([12,8,led_channel_depth+0.2]);
+    translate([du_size-12,du_size/2-4,base_t-led_channel_depth]) cube([12,8,led_channel_depth+0.2]);
 }
 
 module light_base() {
@@ -101,12 +101,11 @@ module diffuser_ring() {
 
 module assembly_preview() {
     color("ivory") light_base();
-    color([0.15,0.15,0.15]) translate([0,0,base_t]) dark_face();
-    color([1,0.8,0.3,0.6]) translate([0,0,-diffuser_t]) diffuser_ring();
+    color([1,0.8,0.3,0.6]) translate([0,0,base_t]) diffuser_ring();
+    color([0.15,0.15,0.15]) translate([0,0,base_t+diffuser_t]) dark_face();
 }
 
 if (part=="base") light_base();
 else if (part=="face") dark_face();
 else if (part=="diffuser") diffuser_ring();
 else assembly_preview();
-

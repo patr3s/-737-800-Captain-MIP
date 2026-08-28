@@ -25,7 +25,7 @@ opening_clearance = 1.0;
 // Adjust only if the physical bezel uses a different pattern.
 bezel_hole_edge = 10;
 bezel_hole_pitch = du_size - 2 * bezel_hole_edge; // 183.2 mm
-m3_clearance = 3.4;
+m3_clearance = 3.2; // calibrated by 5s3a for Anycubic PETG at flow 0.96
 m3_heatset_pocket = 4.6;
 m3_heatset_depth = 4.2;
 

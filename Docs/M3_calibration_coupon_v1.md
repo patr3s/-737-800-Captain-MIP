@@ -38,3 +38,11 @@ Horný rad označený `HS` má 4,2 mm hlboké slepé kapsy s 3,0 mm pilotným ot
 | Zvolený M3 otvor |  |
 | Poznámka |  |
 
+## Výsledok 5s3a – 2026-08-28
+
+- Anycubic PETG sivý, tryska 230 °C, podložka 75 °C, flow 0,96, vrstva 0,20 mm.
+- Rozmer 83,82 × 45,85 mm oproti 84 × 46 mm: rovnomerné zmrštenie približne 0,25 %.
+- Najlepší M3 priechodzí otvor: **3,2 mm**.
+- Heat-set kapsy neboli testované, pretože vložky ešte nie sú zakúpené.
+
+Parameter `m3_clearance` je v nových revíziách nastavený na 3,2 mm pre tento materiál a profil. Pri zmene materiálu alebo flow sa test opakuje.

@@ -44,7 +44,7 @@ plate_corner = 5;
 vesa_slot_len = 10; // ±2.4 mm around a 5.2 mm M4 clearance width
 vesa_clearance = 5.2;
 
-m3_clearance = 3.4;
+m3_clearance = 3.2; // calibrated by 5s3a; printed cradle remains on HOLD
 m3_insert = 4.6;
 m3_slot_len = 10;
 

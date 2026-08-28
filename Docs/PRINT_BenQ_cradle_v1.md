@@ -1,4 +1,6 @@
-# Tlačové pokyny – BenQ VESA cradle v1
+# Tlačové pokyny – ARCHÍV / NEPOUŽÍVAŤ
+
+Tlačený PETG cradle má stav `HOLD/DO NOT PRINT`. Hlavné zaťaženie monitora bude niesť pevný oceľový VESA 100 × 100 mm držiak. Nasledujúce údaje zostávajú iba ako archív pôvodného návrhu.
 
 ## Materiál
 
@@ -41,4 +43,3 @@ Použiť PETG. Prednostne čierny PETG; biely PETG je funkčne rovnocenný a die
 ## Povrchová úprava
 
 Funkčné styčné plochy, heat-set kapsy, závity a dosadacie plochy podložiek sa nestriekajú. Pred farbením sa zamaskujú. Lakovať až po úspešnej suchej montáži celej zostavy.
-

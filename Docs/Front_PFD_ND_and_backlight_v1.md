@@ -12,8 +12,8 @@ Bezel je rozdelený na:
 
 - svetlú nosnú základňu 3,2 mm,
 - tmavú prednú vrstvu 1,2 mm,
-- samostatný 0,8 mm difúzny prstenec,
-- zadný LED kanál široký 5 mm a hlboký 1,2 mm,
+- samostatný 0,4 mm difúzny prstenec,
+- spredu otvorený LED kanál široký 5,6 mm a hlboký 2,0 mm pre 5 mm COB pásik,
 - štyri alternatívne vývody kabeláže,
 - štyri servisné M3 otvory.
 
@@ -31,19 +31,18 @@ Knoby sú oddelené diely:
 
 ## Backlight testovací panel
 
-Panel 120 × 62 mm testuje:
+Opravená revízia 1.1 panelu 120 × 62 mm testuje:
 
 - dvojmateriálovú skladbu svetlá základňa/tmavá maska,
 - presvietiteľné texty a symbol,
-- 0,8 mm difúzor,
-- zadný LED kanál a bočný vývod,
+- 0,4 mm difúzor medzi LED a čiernou face vrstvou,
+- 2,0 mm spredu otvorený LED kanál a bočný vývod,
 - otvor pre budúci dual-concentric encoder,
 - servisné M3 upevnenie.
 
-Na prvý test sa LED môže vložiť voľne do kanála alebo nalepiť odstrániteľnou páskou. Samostatný dimmer okruh má používať vlastné dva vodiče a spoločný bod napájania až v elektronickej rozvodnici; presné napätie a rezistor sa určia podľa vybraného typu LED.
+Použiť dva rovné približne 90 mm úseky 12 V bieleho COB pásika širokého 5 mm. Čierna face vrstva používa stencil písmo, takže stredy písmen nie sú samostatné neprintovateľné ostrovčeky. Samostatný dimmer okruh má používať vlastné dva vodiče a spoločný bod napájania až v elektronickej rozvodnici.
 
 ## V1 výnimky
 
 - Analógový flap indicator môže zostať nefunkčný placeholder alebo byť vynechaný.
 - Zeleno označený manuálny ukazovateľ sa do v1 nezahŕňa.
-

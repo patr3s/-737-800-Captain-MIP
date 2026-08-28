@@ -6,7 +6,7 @@ Modulárny 1:1 Captain-side Main Instrument Panel pre PMDG 737-800.
 
 - DU bezel v2: referenčný rozmer 203,2 × 203,2 mm; aktívny otvor 169,7 × 169,7 mm.
 - PFD+ND carrier v1: parametrický návrh, rozdelený na samostatný PFD a ND rám pre tlačovú plochu 260 × 260 mm.
-- BenQ 18,5\" cradle v1: VESA 100 × 100 mm, delená zostava podľa fyzických rozmerov 445 × 266 × 60 mm; čaká na montážnu kontrolu závitu, káblov a heat-set vložiek.
+- BenQ 18,5\" PETG cradle v1: `HOLD/DO NOT PRINT`; hlavné zaťaženie prevezme pevný oceľový VESA 100 držiak, tlačené budú iba nenosné dorazy a adaptéry.
 - DU bezel v3: parametrická backlit-ready svetlá základňa, tmavá face vrstva a samostatný difúzor.
 - Backlight test panel v1: technologický kupón s LED kanálom a presvietiteľnými znakmi.
 - Dual-concentric knob v1: samostatné parametrické knoby; rozmery hriadeľov sú zatiaľ provisional.
@@ -26,4 +26,4 @@ Súbor sa presunie do `Ready-to-Print/` až po kontrole rozmerov, úspešnom STL
 
 ## Najbližší mechanický krok
 
-Vytlačiť carrier v1 ako skúšobný diel, nasucho osadiť dva DU bezely a určiť finálny rozstup. Zadný držiak BenQ sa doplní až po vyplnení meracieho protokolu v `Docs/BenQ_measurements.md`.
+Dokončiť backlight test v1.1 a heat-set kalibráciu. Následne nasucho osadiť PFD/ND carrier a vybrať pevný oceľový VESA 100 držiak pre hlavné zaťaženie BenQ.
