@@ -1,5 +1,9 @@
 # PFD/ND alignment fit-check v1
 
+> **SUPERSEDED / DO NOT REPRINT:** CAL-003 was measured successfully, but two
+> parts contain assembly errors. Use `PFD-ND-Alignment-Correction-CAL-003B`
+> for the corrected center tongue and seam joiner.
+
 ## Purpose
 
 This inexpensive coupon verifies the final center geometry before printing the complete 445 mm module:
@@ -44,4 +48,3 @@ Print one of every STL in this folder except this instruction file: 9 small part
 - No cracking or forced fit.
 
 Do not print the complete fascia/carrier until this coupon is accepted.
-

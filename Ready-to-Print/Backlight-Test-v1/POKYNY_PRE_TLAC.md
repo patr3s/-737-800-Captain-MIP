@@ -1,5 +1,8 @@
 # Backlight test panel v1 – pokyny pre tlač
 
+> **SUPERSEDED / DO NOT PRINT:** túto verziu nahradil multicolor A/B test
+> `Backlight-Multicolor-AB-CAL-004`. Pôvodná face vrstva má voľné ostrovčeky.
+
 ## Diely
 
 Vytlačiť po jednom kuse:
